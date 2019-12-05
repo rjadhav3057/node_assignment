@@ -16,7 +16,7 @@ app.listen(3000);
 var con = mysql.createConnection ({
     host: 'localhost',
     user: 'root',
-    password: 'root',
+    password: '',
     database: 'studentdetails'
 });
 
