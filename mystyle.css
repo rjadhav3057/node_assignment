@@ -1,0 +1,25 @@
+body{
+    background-color:lightgrey;
+  
+  }
+  .main{
+      width: 100%;
+  }
+
+  .student{
+    border: black solid 1px;
+    padding: 60px;
+    background-color:darkgrey;
+    width: 30%;
+    float: left;
+    height: 500px;
+
+  }
+  .t_data{
+    border: black solid 1px;
+    width: 50%;
+    float:right;
+    padding: 50px;
+    height: 500px;
+
+  }

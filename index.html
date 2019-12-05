@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+ </head>      
+  <body>    
+  <div class="main">     
+    <div class="student">
+        <form name="student">
+          First name:<br>
+          <input type="text" name="firstname" id="firstname">
+          <br>
+          Last name:<br>
+          <input type="text" name="lastname" id="lastname">
+          <br><br>
+          <input type="button" value="Submit" onclick="savedata();">
+        </form> 
+    </div>    
+
+    <div class="t_data">
+      <table>
+        <tr>
+          <td>Id:</td>
+          <td><input type="text" class="stud_id" id="stud_id"></td>
+        </tr>
+        <tr>
+            <td>FistName:</td>
+            <td><input type="text" disabled class="stud_fname" id="stud_fname"></td>
+          </tr>
+          <tr>
+              <td>LastName:</td>
+              <td><input type="text" disabled class="stud_lname" id="stud_lname"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="Preview" onclick="stud_preview();" ></td>
+            </tr>  
+      </table>
+      <div id="myDynamicTable">
+        <input type="button" id="create" value="Click here" onclick="addTable();">
+      </div>
+    </div>
+    </div>  
+</body>
+</html>
