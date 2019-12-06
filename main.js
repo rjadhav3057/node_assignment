@@ -7,7 +7,7 @@ xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
   }
 };
-xmlhttp.open("POST", "http://localhost:3000/student/save", true);
+xmlhttp.open("POST", "http://localhost:3001/student/save", true);
 xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 xmlhttp.send(JSON.stringify({ "fname": first,"lname": last, "response": { "fname": first,"lname":last } }));
 }
@@ -27,7 +27,7 @@ function stud_preview()
       }
     }
   };
-  xhttp.open("GET", "http://localhost:3000/student1?id="+id, false);
+  xhttp.open("GET", "http://localhost:3001/student1?id="+id, false);
   xhttp.setRequestHeader("Content-Type", "application/json");
   xhttp.send();
 }
@@ -71,7 +71,7 @@ function addTable()
 
     }
   };
-  xhttp.open("GET", "http://localhost:3000/student",true);
+  xhttp.open("GET", "http://localhost:3001/student",true);
   xhttp.setRequestHeader("Content-Type", "application/json");
   xhttp.send();
 }
